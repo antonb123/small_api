@@ -22,6 +22,15 @@ def create_app():
 
         return Response(json.dumps(data), 200, content_type='application/json')
 
+    @app.get('/api/v1.0/second')
+    def second_get():
+        data = {
+            'name': 'Sune',
+            'age': 70
+        }
+
+        return Response(json.dumps(data), 200, content_type='application/json')
+
     return app
 
 
