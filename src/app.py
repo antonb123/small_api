@@ -31,8 +31,6 @@ def create_app():
 
         return Response(json.dumps(data), 200, content_type='application/json')
 
-
-
     @app.get('/api/v1.0/third')
     def third_get():
         data = {
@@ -41,8 +39,6 @@ def create_app():
         }
 
         return Response(json.dumps(data), 200, content_type='application/json')
-
-
 
     @app.get('/api/v1.0/forth')
     def forth_get():
